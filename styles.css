@@ -1,0 +1,19 @@
+/* .container {
+  width: 1000px;
+} */
+
+.row {
+  display: flex;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+/* .text-align-center {
+  text-align: center;
+} */
+
+/* .button-add-entry {
+
+} */
