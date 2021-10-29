@@ -1,6 +1,7 @@
-/* .container {
-  width: 1000px;
-} */
+body {
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Zen Kurenaido', sans-serif;
+}
 
 .row {
   display: flex;
@@ -48,7 +49,15 @@
 
 .modal-content {
   background-color: white;
-  padding: 10px 100px;
+  padding: 10px 75px;
+}
+
+.padding-bottom {
+  padding-bottom: 10px;
+}
+
+h1 {
+  margin: 0;
 }
 
 /* .text-align-center {
