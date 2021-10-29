@@ -1,5 +1,6 @@
+/* exported data */
 var data = {
-  view: 'Sunday',
+  view: 'sunday',
   entries: [],
   editing: null,
   nextEntryId: 1
@@ -10,9 +11,9 @@ if (previousDataJSON != null) {
   data = JSON.parse(previousDataJSON);
 }
 
-function beforeunload(event) {
+function beforeUnload(event) {
   var dataJSON = JSON.stringify(data);
   localStorage.setItem('week-planner-local-storage', dataJSON);
 }
 
-window.addEventListener('beforeunload', beforeunload);
+window.addEventListener('beforeunload', beforeUnload);
