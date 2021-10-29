@@ -28,23 +28,34 @@ function clickSubmit(event) {
 $addEntryButton.addEventListener('click', openModal);
 $submitEntryButton.addEventListener('click', closeModal);
 $form.addEventListener('submit', clickSubmit);
-// document.addEventListener('DOMContentLoaded', )
+document.addEventListener('DOMContentLoaded');
 
-// function renderEntries(entry) {
-//   var tableBody = document.querySelector('tbody');
-//   var $tableBody = document.createElement('tbody');
+var $tableGrabbingTableBody = document.querySelector('table');
 
-//   var $row = document.createElement('tr');
-//   $tableBody.appendChild($row);
+function handleDomContent(event) {
+  for (var i = 0; i < data.entries.length; i++) {
+    $tableGrabbingTableBody.appendChild(renderEntries(data.entries[i]));
+  }
+}
 
-//   var $time = document.createElement('td');
-//   $row.appendChild($time);
+document.addEventListener('DOMContentLoaded', handleDomContent);
 
-//   var $description = document.createElement('td');
-//   $row.appendChild($description);
+function renderEntries(entry) {
+  // var tableBody = document.querySelector('tbody');
+  var $tableBody = document.createElement('tbody');
 
-//   return $tableBody;
-// }
+  var $row = document.createElement('tr');
+  $tableBody.appendChild($row);
+
+  var $time = document.createElement('td');
+  $row.appendChild($time);
+
+  var $description = document.createElement('td');
+  $row.appendChild($description);
+
+  return $tableBody;
+
+}
 // function renderEntry(entry) {
 //   /*make tr td
 // }
