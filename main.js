@@ -29,3 +29,22 @@ $addEntryButton.addEventListener('click', openModal);
 $submitEntryButton.addEventListener('click', closeModal);
 $form.addEventListener('submit', clickSubmit);
 // document.addEventListener('DOMContentLoaded', )
+
+// function renderEntries(entry) {
+//   var tableBody = document.querySelector('tbody');
+//   var $tableBody = document.createElement('tbody');
+
+//   var $row = document.createElement('tr');
+//   $tableBody.appendChild($row);
+
+//   var $time = document.createElement('td');
+//   $row.appendChild($time);
+
+//   var $description = document.createElement('td');
+//   $row.appendChild($description);
+
+//   return $tableBody;
+// }
+// function renderEntry(entry) {
+//   /*make tr td
+// }
