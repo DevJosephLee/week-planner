@@ -23,6 +23,10 @@ body {
   justify-content: center;
 }
 
+.justify-content-space-evenly {
+  justify-content: space-evenly;
+}
+
 .planner-notes {
   width: 430px;
   height: 100px;
@@ -70,4 +74,13 @@ body {
 } */
 .hidden {
   display: none;
+}
+
+.days-button {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 3px;
+  padding-right: 3px;
+  border-radius: 3px;
+  width: 7rem;
 }
