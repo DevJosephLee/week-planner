@@ -6,8 +6,25 @@
   display: flex;
 }
 
+.justify-content-end {
+  justify-content: end;
+}
+
+.margin-bottom {
+  margin-bottom: 10px;
+}
+
+.margin-right {
+  margin-right: 10px;
+}
+
 .justify-content-center {
   justify-content: center;
+}
+
+.planner-notes {
+  width: 430px;
+  height: 100px;
 }
 
 /* .text-align-center {

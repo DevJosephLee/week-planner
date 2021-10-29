@@ -7,22 +7,24 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="container">
+  <header>
     <div class="row justify-content-center">
       <h1>Weekly Planner</h1>
     </div>
+  </header>
+  <div class="container">
     <div class="row justify-content-center">
       <button class="button-add-entry">Add Entry</button>
     </div>
   </div>
-  <div class="row">
-    <div class="modal-outer">
+  <div class="row justify-content-center">
+    <div class="modal-outer ">
       <div class="modal-content hidden">
-        <div class="row">
-          <h3>Add Content</h3>
+        <div class="row justify-content-center">
+          <h3>Add Entry</h3>
         </div>
-        <div class="row">
-          <select name="week-days" class="week-days-dropdown">
+        <div class="row margin-bottom">
+          <select name="week-days" class="week-days-dropdown margin-right">
             <option value="">Day Of Week</option>
             <option value="monday">Monday</option>
             <option value="tuesday">Tuesday</option>
@@ -32,6 +34,14 @@
             <option value="saturday">Saturday</option>
             <option value="sunday">Sunday</option>
           </select>
+          <input type="time">
+
+        </div>
+        <div class="row margin-bottom">
+          <textarea class="planner-notes" placeholder="Description"></textarea>
+        </div>
+        <div class="row justify-content-end">
+          <button class="submit-button">Submit</button>
         </div>
       </div>
     </div>
