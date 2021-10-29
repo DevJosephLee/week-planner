@@ -24,28 +24,30 @@
   <div class="row justify-content-center padding-bottom">
     <div class="modal-outer hidden">
       <div class="modal-content">
-        <div class="row justify-content-center">
-          <h1 class="add-entry-header">Add Entry</h1>
-        </div>
-        <div class="row margin-bottom">
-          <select name="week-days" class="week-days-dropdown margin-right">
-            <option value="">Day Of Week</option>
-            <option value="monday">Monday</option>
-            <option value="tuesday">Tuesday</option>
-            <option value="wednesday">Wednesday</option>
-            <option value="thursday">Thursday</option>
-            <option value="friday">Friday</option>
-            <option value="saturday">Saturday</option>
-            <option value="sunday">Sunday</option>
-          </select>
-          <input type="time">
-        </div>
-        <div class="row margin-bottom">
-          <textarea class="planner-notes" placeholder="Description"></textarea>
-        </div>
-        <div class="row justify-content-end">
-          <button class="submit-button">Submit</button>
-        </div>
+        <form>
+          <div class="row justify-content-center">
+            <h1 class="add-entry-header">Add Entry</h1>
+          </div>
+          <div class="row margin-bottom">
+            <select name="week-days" class="week-days-dropdown margin-right">
+              <option value="">Day Of Week</option>
+              <option value="monday">Monday</option>
+              <option value="tuesday">Tuesday</option>
+              <option value="wednesday">Wednesday</option>
+              <option value="thursday">Thursday</option>
+              <option value="friday">Friday</option>
+              <option value="saturday">Saturday</option>
+              <option value="sunday">Sunday</option>
+            </select>
+            <input type="time" class="time" name="time">
+          </div>
+          <div class="row margin-bottom">
+            <textarea class="planner-notes" placeholder="Description"></textarea>
+          </div>
+          <div class="row justify-content-end">
+            <button class="submit-button">Submit</button>
+          </div>
+        </form>
       </div>
     </div>
   </div>
