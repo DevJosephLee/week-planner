@@ -56,8 +56,9 @@ body {
   padding-bottom: 10px;
 }
 
-h1 {
+.add-entry-header {
   margin: 0;
+  padding-bottom: 17px;
 }
 
 /* .text-align-center {
@@ -67,3 +68,6 @@ h1 {
 /* .button-add-entry {
 
 } */
+.hidden {
+  display: none;
+}
