@@ -1,7 +1,15 @@
 /* exported data */
 var data = {
-  view: 'sunday',
-  entries: [],
+  currentDay: 'sunday',
+  days: {
+    sunday: [],
+    monday: [],
+    tuesday: [],
+    wednesday: [],
+    thursday: [],
+    friday: [],
+    saturday: []
+  },
   editing: null,
   nextEntryId: 1
 };
